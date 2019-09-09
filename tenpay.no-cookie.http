@@ -1,0 +1,127 @@
+POST https://groupaccount.tenpay.com/fcgi-bin/grp_qry_bulletscreen.fcgi HTTP/1.1
+Host: groupaccount.tenpay.com
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Accept-Encoding: br, gzip, deflate
+Connection: keep-alive
+Cookie: grp_qlskey={YOUR_QLSKEY};grp_qluin={YOUR_QLUIN}
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN
+Referer: https://servicewechat.com/wxcf8e5b328359cb7a/193/page-frame.html
+Content-Length: 29
+Accept-Language: zh-cn
+
+guid=rbwNovsT0109000037402906
+
+###
+
+POST https://groupaccount.tenpay.com/fcgi-bin/grp_project_qry_info_encry.fcgi HTTP/1.1
+Host: groupaccount.tenpay.com
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Accept-Encoding: br, gzip, deflate
+Connection: keep-alive
+Cookie: grp_qlskey={YOUR_QLSKEY};grp_qluin={YOUR_QLUIN}
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN
+Referer: https://servicewechat.com/wxcf8e5b328359cb7a/193/page-frame.html
+
+###
+
+POST https://groupaccount.tenpay.com/fcgi-bin/grp_commentlist_query.fcgi HTTP/1.1
+Host: groupaccount.tenpay.com
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Accept-Encoding: br, gzip, deflate
+Connection: keep-alive
+Cookie: grp_qlskey={YOUR_QLSKEY};grp_qluin={YOUR_QLUIN}
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN
+Referer: https://servicewechat.com/wxcf8e5b328359cb7a/193/page-frame.html
+Content-Length: 54
+Accept-Language: zh-cn
+
+guid=rbwNovsT0109000037402906&offset=0&limit=10&flag=1
+
+###
+
+POST https://groupaccount.tenpay.com/fcgi-bin/grp_qry_group_water.fcgi HTTP/1.1
+Host: groupaccount.tenpay.com
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Accept-Encoding: br, gzip, deflate
+Connection: keep-alive
+Cookie: grp_qlskey={YOUR_QLSKEY};grp_qluin={YOUR_QLUIN}
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN
+Referer: https://servicewechat.com/wxcf8e5b328359cb7a/193/page-frame.html
+Content-Length: 158
+Accept-Language: zh-cn
+
+group_account_id=rbwNovsT0109000037402906&start_time=2019-07-01%2012%3A00%3A00&end_time=2019-09-02%2015%3A42%3A16&qry_ver=1&lastbkid=&offset=0&limit=10&type=3
+
+
+###
+
+POST https://groupaccount.tenpay.com/fcgi-bin/grp_qry_group_water.fcgi HTTP/1.1
+Host: groupaccount.tenpay.com
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Accept-Encoding: br, gzip, deflate
+Connection: keep-alive
+Cookie: grp_qlskey={YOUR_QLSKEY};grp_qluin={YOUR_QLUIN}
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN
+Referer: https://servicewechat.com/wxcf8e5b328359cb7a/193/page-frame.html
+Content-Length: 158
+Accept-Language: zh-cn
+
+group_account_id=rbwNovsT0109000037402906&start_time=2019-07-01%2012%3A00%3A00&end_time=2019-09-02%2015%3A42%3A16&qry_ver=1&lastbkid=&offset=0&limit=10&type=2
+
+###
+
+POST https://groupaccount.tenpay.com/fcgi-bin/grp_qry_bulletscreen.fcgi HTTP/1.1
+Host: groupaccount.tenpay.com
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Accept-Encoding: br, gzip, deflate
+Connection: keep-alive
+Cookie: grp_qlskey={YOUR_QLSKEY};grp_qluin={YOUR_QLUIN}
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN
+Referer: https://servicewechat.com/wxcf8e5b328359cb7a/193/page-frame.html
+Content-Length: 29
+Accept-Language: zh-cn
+
+guid=rbwNovsT0109000037402906
+
+
+###
+
+POST https://groupaccount.tenpay.com/fcgi-bin/grp_qry_group_info.fcgi HTTP/1.1
+Host: groupaccount.tenpay.com
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Accept-Encoding: br, gzip, deflate
+Connection: keep-alive
+Cookie: grp_qlskey={YOUR_QLSKEY};grp_qluin={YOUR_QLUIN}
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN
+Referer: https://servicewechat.com/wxcf8e5b328359cb7a/193/page-frame.html
+Content-Length: 41
+Accept-Language: zh-cn
+
+group_account_id=Z2BQ5kgA0100001680036906
+
+###
+
+POST https://groupaccount.tenpay.com/fcgi-bin/grp_project_qry_list.fcgi HTTP/1.1
+Host: groupaccount.tenpay.com
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Accept-Encoding: br, gzip, deflate
+Connection: keep-alive
+Cookie: grp_qlskey={YOUR_QLSKEY};grp_qluin={YOUR_QLUIN}
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.5(0x17000523) NetType/WIFI Language/zh_CN
+Referer: https://servicewechat.com/wxcf8e5b328359cb7a/193/page-frame.html
+Content-Length: 65
+Accept-Language: zh-cn
+
+parent_guid=Z2BQ5kgA0100001680036906&limit=50&offset=0&qry_state=
+Content-Length: 204
+Accept-Language: zh-cn
+
+encry_project_id=7HjNqxQ6GsgHvSicKJzseBQAAAAAAA4AGAAEAAgADAAQABQADgAAADwAAAADAAAAAQAAAAgAAAAxXlvmIAAAALvtdwfXBkxeGMcUbdq1uGx_crWXLnhTfY9zeNHIlxE6AAAAACAAAAAAseeY94iL2alk5ajNJZtLwok_wVTxRnUsDXd3APGavQAAAAA
