@@ -9,11 +9,11 @@
     "build:schema": "npx typescript-json-schema 'src/config.ts' IConfigSchema --required --out ./build/config.schema.json",
     "lint": "eslint --cache --ext .js,.ts ./src",
     "pm2": "pm2 startOrReload process.json",
-    "prod": "cross-env --NODE-ENV=production node bin/runtime",
+    "prod": "cross-env --NODE_ENV=production node bin/runtime",
     "dev": "cross-env --NODE_ENV=development bin/dev | npm run bunyan",
-    "pm2:beauty": "npm run pm2 | npm run bunyan",
     "prod:beauty": "npm run prod | npm run bunyan",
-    "bunyan": "npx bunyan -o short"
+    "bunyan": "npx bunyan -o short",
+    "pm2log": "pm2 log TenpayMonitor --raw | npx bunyan -o short"
   },
   "repository": {
     "type": "git",

@@ -1,8 +1,9 @@
 {
   "apps":[{
     "name": "TenpayMonitor",
-    "script": "npm run prod",
+    "script": "bin/runtime",
     "env":{
+      "NODE_ENV": "production"
     }
   }]
 }
