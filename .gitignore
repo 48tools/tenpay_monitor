@@ -26,6 +26,7 @@ yarn-error.log*
 
 /.history
 /logs/*.log
+/logs/*.log.*
 config.json
 
 
