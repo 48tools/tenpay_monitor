@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es2017",
+      "sourceMap": true,
+      "lib": ["es5", "es6", "es7", "es2017"],
+      "allowJs": true,
+      "outDir": "build",
+      "noUnusedLocals": true,
+      "strictNullChecks": true,
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+      "emitDecoratorMetadata": true,
+      "esModuleInterop": true,
+      "baseUrl": ".",
+      "rootDir": "src",
+      "typeRoots": [
+        "node_modules/@types",
+        "./typings"
+      ],
+      "paths": {
+        "@typings/*": ["./typings/*", "*"]
+      }
+    },
+    "exclude": [
+      "node_modules",
+      "build",
+      "public",
+      "message-render"
+    ]
+  }
+  

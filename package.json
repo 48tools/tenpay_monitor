@@ -1,0 +1,57 @@
+{
+  "name": "tenpay_monitor",
+  "version": "0.0.1",
+  "description": "Tenpay monitor",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "npm run build:ts && npm run build:schema",
+    "build:ts": "tsc",
+    "build:schema": "npx typescript-json-schema 'src/config.ts' IConfigSchema --required --out ./build/config.schema.json",
+    "lint": "eslint --cache --ext .js,.ts ./src",
+    "pm2": "pm2 startOrReload process.json",
+    "prod": "cross-env --NODE-ENV=production node bin/runtime",
+    "dev": "cross-env --NODE_ENV=development bin/dev | npm run bunyan",
+    "pm2:beauty": "npm run pm2 | npm run bunyan",
+    "prod:beauty": "npm run prod | npm run bunyan",
+    "bunyan": "npx bunyan -o short"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/48tools/tenpay_monitor.git"
+  },
+  "keywords": [
+    "腾讯小经费"
+  ],
+  "author": "Flower Db <dearestdyw@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/48tools/tenpay_monitor/issues"
+  },
+  "devDependencies": {
+    "@types/bunyan": "^1.8.6",
+    "@types/lodash": "^4.14.138",
+    "@types/node": "^11.13.6",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
+    "eslint": "^6.0.1",
+    "husky": "^3.0.8",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.5.3",
+    "source-map-support": "^0.5.13",
+    "typescript-json-schema": "^0.40.0"
+  },
+  "dependencies": {
+    "async-sema": "^3.0.1",
+    "axios": "^0.19.0",
+    "bunyan": "^1.8.12",
+    "cq-websocket": "^2.0.2",
+    "cross-env": "^6.0.3",
+    "crypto": "^1.0.1",
+    "jsonschema": "^1.2.4",
+    "lodash": "^4.17.15",
+    "lodash-decorators": "^6.0.1",
+    "moment": "^2.24.0",
+    "rxjs": "^6.5.3"
+  },
+  "homepage": "https://github.com/48tools/tenpay_monitor#readme"
+}

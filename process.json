@@ -1,0 +1,8 @@
+{
+  "apps":[{
+    "name": "TenpayMonitor",
+    "script": "npm run prod",
+    "env":{
+    }
+  }]
+}

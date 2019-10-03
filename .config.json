@@ -1,0 +1,22 @@
+{
+  "cookie": {
+    "qlskey": "{YOUR_QLSKEY}",
+    "qluin": "{YOUR_QLUIN}"
+  },
+  "coolQ": {
+  },
+  "messageThrottle": 300,
+  "tenpayGroups": [
+    {
+      "tenpayGroupId": "TENPAY_GROUP_ID",
+      "remarkName": "标记圈子用",
+      "messageRender": "YOUR custom render js or empty",
+      "qqGroup": [
+        {
+          "groupId": "QQ_GROUP_NUMBER",
+          "remarkName": "标记群用"
+        }
+      ]
+    }
+  ]
+}

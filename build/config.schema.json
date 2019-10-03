@@ -1,0 +1,199 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "CQRequestOptions": {
+            "properties": {
+                "timeout": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "timeout"
+            ],
+            "type": "object"
+        },
+        "IGroupWatchConfigSchema": {
+            "properties": {
+                "autoStart": {
+                    "description": "是否默认开启轮询，设为false关闭，默认true",
+                    "type": "boolean"
+                },
+                "interval": {
+                    "description": "监听间隔，默认10秒",
+                    "type": "number"
+                },
+                "messageRender": {
+                    "description": "消息渲染",
+                    "type": "string"
+                },
+                "qqGroup": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/IQQGroupReportSchema"
+                        },
+                        {
+                            "items": {
+                                "$ref": "#/definitions/IQQGroupReportSchema"
+                            },
+                            "type": "array"
+                        }
+                    ]
+                },
+                "remarkName": {
+                    "description": "圈子备注",
+                    "type": "string"
+                },
+                "reportFeeMinimum": {
+                    "description": "最低播报金额 单位：元",
+                    "type": "number"
+                },
+                "tenpayGroupId": {
+                    "description": "圈子ID",
+                    "type": "string"
+                },
+                "tenpayGroupImage": {
+                    "description": "圈子主图",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "tenpayGroupId"
+            ],
+            "type": "object"
+        },
+        "IQQGroupReportSchema": {
+            "properties": {
+                "groupId": {
+                    "type": "string"
+                },
+                "messageRender": {
+                    "description": "消息渲染",
+                    "type": "string"
+                },
+                "remarkName": {
+                    "description": "QQ群备注",
+                    "type": "string"
+                },
+                "reportFeeMinimum": {
+                    "description": "最低播报金额 单位：元",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "groupId"
+            ],
+            "type": "object"
+        },
+        "Partial<CQWebSocketOption>": {
+            "description": "Make all properties in T optional",
+            "properties": {
+                "accessToken": {
+                    "type": "string"
+                },
+                "baseUrl": {
+                    "type": "string"
+                },
+                "enableAPI": {
+                    "type": "boolean"
+                },
+                "enableEvent": {
+                    "type": "boolean"
+                },
+                "fragmentOutgoingMessages": {
+                    "type": "boolean"
+                },
+                "fragmentationThreshold": {
+                    "type": "number"
+                },
+                "host": {
+                    "type": "string"
+                },
+                "port": {
+                    "type": "number"
+                },
+                "protocol": {
+                    "$ref": "#/definitions/WebSocketProtocol"
+                },
+                "qq": {
+                    "type": [
+                        "string",
+                        "number"
+                    ]
+                },
+                "reconnection": {
+                    "type": "boolean"
+                },
+                "reconnectionAttempts": {
+                    "type": "number"
+                },
+                "reconnectionDelay": {
+                    "type": "number"
+                },
+                "requestOptions": {
+                    "$ref": "#/definitions/CQRequestOptions"
+                },
+                "tlsOptions": {
+                }
+            },
+            "type": "object"
+        },
+        "WebSocketProtocol": {
+            "enum": [
+                "http:",
+                "https:",
+                "ws:",
+                "wss:"
+            ],
+            "type": "string"
+        }
+    },
+    "properties": {
+        "cookie": {
+            "properties": {
+                "qlskey": {
+                    "type": "string"
+                },
+                "qluin": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "qlskey",
+                "qluin"
+            ],
+            "type": "object"
+        },
+        "coolQ": {
+            "$ref": "#/definitions/Partial<CQWebSocketOption>"
+        },
+        "interval": {
+            "description": "监听间隔，默认10秒",
+            "type": "number"
+        },
+        "messageRender": {
+            "description": "消息渲染",
+            "type": "string"
+        },
+        "messageThrottle": {
+            "description": "QQ消息发送间隔",
+            "type": "number"
+        },
+        "reportFeeMinimum": {
+            "description": "最低播报金额 单位：元",
+            "type": "number"
+        },
+        "tenpayGroups": {
+            "items": {
+                "$ref": "#/definitions/IGroupWatchConfigSchema"
+            },
+            "type": "array"
+        }
+    },
+    "required": [
+        "cookie",
+        "coolQ",
+        "tenpayGroups"
+    ],
+    "type": "object"
+}
+

@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+require('source-map-support').install()
+
+/**
+ * Module dependencies.
+ */
+
+const packageJson = require('../package.json');
+process.title = packageJson.name;
+
+require('../build')

@@ -8,9 +8,6 @@
 # testing
 /coverage
 
-# production
-/build
-
 .idea/*
 
 # misc
@@ -28,3 +25,9 @@ yarn-error.log*
 /lib
 
 /.history
+/logs
+config.json
+
+
+#package-lock
+package-lock.json
