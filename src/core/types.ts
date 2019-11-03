@@ -1,3 +1,6 @@
+export enum EnumBoolean {
+  FALSE, TRUE
+}
 /** 单条集资 */
 export interface IProjectWaterSingleItem {
   audits_nickname: string
@@ -249,4 +252,43 @@ export interface IProjectWaterReqConfig extends IPageReqConfig, IProjectIdReqCon
 
 export interface IProjectListReqConfig extends IPageReqConfig {
   parent_guid: string
+}
+
+export interface ICommentDetail {
+  /**
+   * 是否为系统发送
+   */
+  by_sys: EnumBoolean
+  /**
+   * 评论时间
+   * 字符串时格式：YYYY-MM-DD hh:mm:ss
+   * @default new Date()
+   */
+  create_time: string
+  group_role: number
+  have_praise: number
+  headurl: string
+  more_sub: 0
+  /** 评论文字 */
+  msg_content: string
+  /** 评论图片 */
+  msg_pictrueurl: string[]
+  /** 评论视频 */
+  msg_videourl: string
+  /** 评论ID */
+  msgid: string
+  /** 小经费内昵称 */
+  nickname: string
+  /** 微信昵称 */
+  origin_name: string
+  /** 不知道啥list */
+  praise_list: any[]
+  /** */
+  praise_num: number
+  /** 子评论 */
+  subcomment_list: ICommentDetail[]
+  subcomment_num: number
+  /** 是否制定 */ 
+  top_set: EnumBoolean
+  unionid: string
 }

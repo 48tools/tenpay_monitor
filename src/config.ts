@@ -42,7 +42,7 @@ export interface IConfigSchema extends IBaseGroupWatchConfigSchema {
   messageThrottle?: number
 }
 
-function validateSchema(config: IConfigSchema): boolean {
+export function validateSchema(config: IConfigSchema): boolean {
   const validator = new Validator()
   let schema: Schema
   if (isDev) {

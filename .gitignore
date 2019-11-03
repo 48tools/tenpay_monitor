@@ -28,6 +28,7 @@ yarn-error.log*
 /logs/*.log
 /logs/*.log.*
 config.json
+config.dev.json
 
 
 #package-lock
