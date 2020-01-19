@@ -168,7 +168,7 @@ export interface IGroupProjectListRaw extends IGroupProjectListBase {
  * 项目详情
  */
 export interface IProjectDetail {
-  /** 当前已募集金额 */
+  /** 当前未提现金额 */
   balance: number
   /** 开始时间, 标准时间格式 */
   begin_time: string
@@ -196,7 +196,7 @@ export interface IProjectDetail {
   target_amount: number
   /** 项目标题 */
   title: string
-  /** 当前已募集金额-不知道和balance有什么区别 */
+  /** 当前已募集金额（包含已提现） */
   total_amount: number
 }
 
