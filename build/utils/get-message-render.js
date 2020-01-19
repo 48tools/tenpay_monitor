@@ -27,8 +27,8 @@ function defaultWaterTemplate(waterItem) {
 }
 exports.defaultWaterTemplate = defaultWaterTemplate;
 function defaultProjectTemplate(project) {
-    const { percent, title, balance, target_amount } = project;
-    return `项目 ${title} 当前进度 ${percent}% (${balance}/${target_amount})`;
+    const { percent, title, target_amount, total_amount } = project;
+    return `项目 ${title} 当前进度 ${percent}% (${total_amount}/${target_amount})`;
 }
 exports.defaultProjectTemplate = defaultProjectTemplate;
 function getMessageRender(pathFile) {
